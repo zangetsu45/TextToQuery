@@ -1,0 +1,113 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #1f2937, #007bff, #4caf50, #ff5722);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .signup-card {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    width: 350px;
+  }
+  
+  .signup-card img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-card h2 {
+    margin-bottom: 20px;
+    color: #1f2937;
+    font-size: 1.5rem;
+  }
+  
+  .signup-card .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .signup-card label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1f2937;
+  }
+  
+  .signup-card input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .signup-card input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px #007bff;
+    outline: none;
+  }
+  
+  .signup-card button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .signup-card button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  .signup-card p {
+    margin-top: 10px;
+    color: #1f2937;
+    font-size: 0.9rem;
+  }
+  
+  .signup-card p span {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .signup-card p span:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-card .error {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 5px;
+  }
+  

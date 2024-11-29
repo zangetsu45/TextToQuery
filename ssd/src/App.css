@@ -1,0 +1,43 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+
+/* Table Styling */
+table {
+  border-collapse: collapse; /* Remove space between borders */
+  width: 100%;
+  background-color: white; /* Ensure the table has a white background */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  border: none; /* Ensure no border around the table */
+  box-shadow: none; /* Remove any shadow effect */
+}
+
+/* Table Header Styling */
+th {
+  background-color: #f9f9f9; /* Light grey for header */
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd; /* Add borders to individual cells */
+}
+
+/* Table Cell Styling */
+td {
+  padding: 8px;
+  border: 1px solid #ddd; /* Add borders to individual cells */
+  text-align: left;
+}
+
+/* Remove Grey Background from Parent Container */
+.chat-message.bot-message div {
+  background-color: transparent; /* Ensure no background on container div */
+  border: none; /* Remove any container borders */
+  margin: 0;
+  padding: 0;
+}

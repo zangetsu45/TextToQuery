@@ -1,0 +1,121 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../../assets/text-to-query-logo.png") center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  backdrop-filter: blur(10px); /* Blur effect */
+  z-index: 0;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  width: 350px;
+}
+
+.login-card img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+  font-size: 1.5rem;
+}
+
+.login-card .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+.login-card input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px #007bff;
+  outline: none;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.login-card .skip-button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-card .skip-button:hover {
+  background-color: #388e3c;
+  transform: scale(1.02);
+}
+
+.login-card p {
+  margin-top: 10px;
+  color: #1f2937;
+  font-size: 0.9rem;
+}
+
+.login-card p span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-card p span:hover {
+  text-decoration: underline;
+}

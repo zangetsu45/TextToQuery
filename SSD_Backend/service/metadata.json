@@ -1,0 +1,6 @@
+{
+    "customers": ["customer_id", "name", "age", "city", "join_date"],
+    "accounts": ["account_id", "customer_id", "balance", "account_type", "opening_date"],
+    "transactions": ["transaction_id", "account_id", "amount", "transaction_type", "transaction_date"]
+}
+  
